@@ -36,15 +36,15 @@ class Bakery
 		when Menu::CLASSIC
 		  :CLASSIC
 		when Menu::BANANA_AND_WHIP
-			:BANANA_AND_WHIP
+		  :BANANA_AND_WHIP
 		when Menu::BACON_AND_CHEESE
-			:BACON_AND_CHEESE
+		  :BACON_AND_CHEESE
 		when Menu::MIX_BERRY
-			:MIX_BERRY
+		  :MIX_BERRY
 		when Menu::BAKED_MARSHMALLOW
-			:BAKED_MARSHMALLOW
+		  :BAKED_MARSHMALLOW
 		when Menu::SPICY_CURRY
-			:SPICY_CURRY
+		  :SPICY_CURRY
 		else
 		  raise "unknown menu: #{menu}"
 		end

@@ -35,4 +35,8 @@ func main() {
 	<-quit
 	log.Println("stopping gRPC server...")
 	server.GracefulStop()
+
+
+	// インターセプタを書いてみる
+	
 }

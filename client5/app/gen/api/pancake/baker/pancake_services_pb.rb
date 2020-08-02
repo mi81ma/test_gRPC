@@ -16,9 +16,11 @@ module Pancake
         self.service_name = 'pancake.baker.PancakeBakerService'
 
         # Bakeは指定されたメニューのパンケーキを焼く関数です
-        rpc :Bake, Pancake::Baker::BakeRequest, Pancake::Baker::BakeResponse
+        ## rpc :Bake, Pancake::Baker::BakeRequest, Pancake::Baker::BakeResponse
+        rpc :Bake, BakeRequest, BakeResponse
         # Reportはメニューごとに焼いたパンケーキの数を返します
-        rpc :Report, Pancake::Baker::ReportRequest, Pancake::Baker::ReportResponse
+        ## rpc :Report, Pancake::Baker::ReportRequest, Pancake::Baker::ReportResponse
+        rpc :Report, ReportRequest, ReportResponse
       end
 
       Stub = Service.rpc_stub_class
